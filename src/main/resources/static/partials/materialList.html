@@ -1,0 +1,8 @@
+
+<div ng-show="authenticated">
+    <ul>
+        <li ng-repeat="l in listCtrl.materials">
+            <a ng-href="#!details/{{l.id}}">{{l.name}}</a>
+        </li>
+    </ul>
+</div>

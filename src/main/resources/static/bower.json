@@ -1,0 +1,17 @@
+{
+  "name": "SpringSecurityAngularApp",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.9",
+    "angular-resource": "^1.7.9",
+    "angular-route": "^1.7.9"
+  }
+}

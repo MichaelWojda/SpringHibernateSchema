@@ -1,0 +1,8 @@
+<div ng-show="authenticated">
+<h1>Dodaj materiał do bazy</h1>
+<form>
+    <input type="text" placeholder="Wpisz nazwę" ng-model="amCtrl.material.name">
+    <input type="text" placeholder="Wpisz opis" ng-model="amCtrl.material.description">
+    <button ng-click="amCtrl.add()">Dodaj</button>
+</form>
+</div>

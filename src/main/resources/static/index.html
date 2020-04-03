@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <script type="application/javascript" src="js/lib/angular/angular.js"></script>
+    <script type="application/javascript" src="js/lib/angular-resource/angular-resource.js"></script>
+    <script type="application/javascript" src="js/lib/angular-route/angular-route.js"></script>
+    <script type="application/javascript" src="js/app.js"></script>
+</head>
+<body>
+<a href="#!secured">Go To Secured Area</a>
+<a href="#!register">Register</a>
+<a ng-show="!authenticated" ng-href="#!login">Login</a>
+<a ng-show="authenticated" ng-href="#!login">Logout</a>
+<a ng-show="authenticated" ng-href="#!addMaterial">Add New Material</a>
+<a ng-show="authenticated" ng-href="#!materialList">List</a>
+
+
+
+
+
+<div ng-view></div>
+
+</body>
+</html>

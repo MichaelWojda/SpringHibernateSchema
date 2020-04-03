@@ -1,0 +1,10 @@
+<div ng-show="!authenticated">
+    <form>
+        <input type="text" placeholder="Wpisz login" ng-model="lCtrl.user.username">
+        <input type="password" placeholder="Wpisz password" ng-model="lCtrl.user.password">
+        <button ng-click="lCtrl.login()">Dodaj</button>
+    </form>
+</div>
+<div ng-show="authenticated">
+    <a ng-click="lCtrl.logout()">Logout</a>
+</div>
